@@ -140,7 +140,7 @@ function getAppData(singleAppFileInfo) {
                     appData[appKeyVal.key] = appKeyVal.value;
                 }
                 if (o.includes("kMDItemDisplayName")) {
-                    appData.appName = appKeyVal.value;
+                    appData.appName = appKeyVal.value + ".app";
                 }
                 if (o.includes("kMDItemVersion")) {
                     appData.appVersion = appKeyVal.value;
